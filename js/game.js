@@ -102,6 +102,10 @@ class Game{
                  
                   if (player.index !== null) {
                      //fill code here, to destroy the objects.
+                    if(player.isTouching(fruitGroup)){
+                        fruitGroup.destroyEach();
+                    }
+                     
                   }
                 
 
